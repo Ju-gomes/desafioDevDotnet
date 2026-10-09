@@ -12,29 +12,7 @@ C# Collections In-Memory (ConcurrentDictionary para persistência em memória th
 
 📁 Estrutura da Solução
 
-A arquitetura foi projetada visando manutenibilidade, testabilidade e separação clara de responsabilidades:
-
-desafioDotnet/
-├── controllers/          # Camada REST (Endpoints/Rotas HTTP)
-│   ├── CobrancaController.cs
-│   ├── ComissoesController.cs
-│   └── EstoqueController.cs
-├── dtos/                 # Contratos de Entrada e Saída (Request/Response)
-│   ├── cobranca/
-│   ├── comissao/
-│   └── estoque/
-├── enums/                # Tipos Enumerados (Ex: TipoMovimentacao)
-├── models/               # Entidades de Domínio (Ex: Produto)
-├── services/             # Regras de Negócio e Cálculos
-│   ├── interface/        # Abstrações/Contratos das Regras de Negócio
-│   │   ├── ICobrancaService.cs
-│   │   ├── IComissaoService.cs
-│   │   └── IEstoqueService.cs
-│   ├── CobrancaService.cs
-│   ├── ComissaoService.cs
-│   └── EstoqueService.cs
-└── Program.cs            # Injeção de Dependências e Middlewares
-
+A arquitetura foi projetada visando manutenibilidade, testabilidade e separação clara de responsabilidades.
 
 💻 Módulos do Sistema
 
@@ -99,7 +77,7 @@ dotnet run
 Acessar a documentação no Swagger:
 Abra o seu navegador e acesse:
 
-http://localhost:5034/swagger
+http://localhost:5035/swagger
 
 
 📬 Exemplos de Requisições (Endpoints)
